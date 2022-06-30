@@ -1,5 +1,7 @@
 import React from 'react'
 import './portfolio.css'
+
+//IMAGENS 480px/360px
 import IMG1 from '../../assets/portfolio-alurakut.png'
 import IMG2 from '../../assets/portfolio-alura-studies.png'
 // import IMG3 from '../../assets/portfolio3.jpg'
