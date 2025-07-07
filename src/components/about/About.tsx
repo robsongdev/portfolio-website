@@ -46,7 +46,12 @@ const About: React.FC = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <Image src={ME} alt="Robson Gabriel - About" />
+            <Image
+              src={ME}
+              alt="Robson Gabriel - About"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
         {/* =====================CARDS ABOUT ======================= */}

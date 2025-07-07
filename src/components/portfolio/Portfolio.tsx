@@ -24,7 +24,12 @@ interface PortfolioItemProps {
 const PortfolioItemComponent: React.FC<PortfolioItemProps> = ({ item }) => (
   <article className="portfolio__item">
     <div className="portfolio__item-image">
-      <Image src={item.image} alt={item.title} />
+      <Image
+        src={item.image}
+        alt={item.title}
+        fill
+        style={{ objectFit: 'cover' }}
+      />
     </div>
     <h3>{item.title}</h3>
     <div className="portfolio__item-cta">
