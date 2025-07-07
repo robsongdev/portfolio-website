@@ -36,8 +36,10 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about__card {
@@ -47,6 +49,9 @@
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .about__card:hover {
@@ -64,6 +69,120 @@
     color: var(--color-light);
 }
 
+.about__card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about__card-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Experience Card Styles */
+.about__card--experience .about__card-content {
+    gap: 1.2rem;
+}
+
+.about__card-company h6 {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.about__card-positions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.about__card-position {
+    background: rgba(77, 181, 255, 0.1);
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    border-left: 2px solid var(--color-primary);
+}
+
+.about__card-position-title {
+    display: block;
+    color: var(--color-white);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.about__card-position-period {
+    color: var(--color-light);
+    font-size: 0.7rem;
+}
+
+.about__card-responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about__card-responsibility {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.75rem;
+    line-height: 1.3;
+}
+
+.about__card-responsibility span {
+    color: var(--color-light);
+}
+
+.about__card-check {
+    color: var(--color-primary);
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+
+/* Education Card Styles */
+.about__card--education .about__card-content {
+    gap: 1rem;
+}
+
+.about__card-education {
+    background: rgba(77, 181, 255, 0.05);
+    border: 1px solid rgba(77, 181, 255, 0.2);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.about__card-education:hover {
+    background: rgba(77, 181, 255, 0.1);
+    border-color: var(--color-primary-variant);
+}
+
+.about__card-education h6 {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+}
+
+.about__card-education p {
+    color: var(--color-white);
+    font-size: 0.75rem;
+    margin: 0 0 0.4rem 0;
+    line-height: 1.3;
+}
+
+.about__card-education-period {
+    color: var(--color-light);
+    font-size: 0.7rem;
+}
+
 .about__icon {
     color: var(--color-primary);
     font-size: 1.4rem;
@@ -74,6 +193,8 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
+
+
 
 /*=============MEDIA QUERIES (MEDIUM DEVICES)=============*/
 
@@ -91,6 +212,24 @@
     .about__content p {
         margin: 1rem 0 1.5rem;
     }
+
+    .about__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 600px;
+    }
+
+    .about__card {
+        padding: 1.5rem;
+    }
+
+    .about__card-position {
+        padding: 0.5rem;
+    }
+
+    .about__card-education {
+        padding: 0.8rem;
+    }
 }
 
 /*=============MEDIA QUERIES (SMALL DEVICES)=============*/
@@ -102,8 +241,9 @@
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 400px;
     }
 
     .about__content {
@@ -112,6 +252,54 @@
 
     .about__content {
         margin: 1.5rem 0;
+    }
+
+    .about__card {
+        padding: 1rem;
+    }
+
+    .about__card h5 {
+        font-size: 0.85rem;
+    }
+
+    .about__card small {
+        font-size: 0.65rem;
+    }
+
+    .about__card-company h6 {
+        font-size: 0.8rem;
+    }
+
+    .about__card-position {
+        padding: 0.5rem;
+    }
+
+    .about__card-position-title {
+        font-size: 0.75rem;
+    }
+
+    .about__card-position-period {
+        font-size: 0.65rem;
+    }
+
+    .about__card-responsibility {
+        font-size: 0.7rem;
+    }
+
+    .about__card-education {
+        padding: 0.8rem;
+    }
+
+    .about__card-education h6 {
+        font-size: 0.75rem;
+    }
+
+    .about__card-education p {
+        font-size: 0.7rem;
+    }
+
+    .about__card-education-period {
+        font-size: 0.65rem;
     }
 
 }

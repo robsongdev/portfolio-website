@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     { href: '#experience', label: 'Experiências' },
     { href: '#services', label: 'Serviços' },
     { href: '#portfolio', label: 'Portfólio' },
-    { href: '#testimonials', label: 'Depoimentos' },
+    // { href: '#testimonials', label: 'Depoimentos' },
     { href: '#contact', label: 'Contatos' },
   ];
 
