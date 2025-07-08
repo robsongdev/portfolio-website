@@ -33,16 +33,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => (
 
 const Services: React.FC = () => {
   const servicesData: ServiceData[] = [
-    {
-      title: 'UI/UX Design',
-      items: [
-        { description: 'Design de interfaces modernas e responsivas' },
-        { description: 'Prototipagem e wireframes' },
-        { description: 'Experiência do usuário otimizada' },
-        { description: 'Design system e componentes reutilizáveis' },
-        { description: 'Testes de usabilidade' },
-      ],
-    },
+    // {
+    //   title: 'UI/UX Design',
+    //   items: [
+    //     { description: 'Design de interfaces modernas e responsivas' },
+    //     { description: 'Prototipagem e wireframes' },
+    //     { description: 'Experiência do usuário otimizada' },
+    //     { description: 'Design system e componentes reutilizáveis' },
+    //     { description: 'Testes de usabilidade' },
+    //   ],
+    // },
     {
       title: 'Web Development',
       items: [

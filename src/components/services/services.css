@@ -1,7 +1,9 @@
 .services__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .service {
@@ -10,12 +12,15 @@
     border: 1px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .service:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .service__head {
@@ -54,8 +59,9 @@
 
 @media screen and (max-width: 1024px) {
     .services__container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
+        max-width: 600px;
     }
 
     .service {
